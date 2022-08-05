@@ -60,6 +60,7 @@ bot.on("message", async message => {
             message.reply("írj szöveget!")
         }
     }
+    if(cmd === `${prefix}whiteliston`){
     message.channel.bulkDelete(1);
 
     let role1 = "1005071146728833114";
