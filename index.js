@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const tokenfile = require("./tokenfile.json");
 const botconfig = require("./config.json");
 const client = new Discord.Client({disableEveryone: true});
 const superagent = require('superagent');
@@ -176,5 +175,5 @@ client.on("message", async message =>{
 })
 
 
-client.login(tokenfile.token);
+client.login(process.env.BOT_TOKEN);
 
